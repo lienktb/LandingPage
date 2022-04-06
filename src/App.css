@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  font-family: 'Poppins';
 }
 
 .App-logo {
@@ -7,32 +7,188 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top-fixed {
+  position: fixed;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-custom{
+  transition: all 0.5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-custom ul li a {
+  font-size: 15px;
+  padding: 10px;
+  margin: 0 10px;
 }
+
+.home {
+  background-image: url("./assets/image/img-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+
+.about{
+  background-image: url("./assets/image/img-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
+  position: relative;
+}
+
+.bg-overlay {
+  background: linear-gradient(to right, #512da8, #711e72);
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+.home-text {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%; /* Cách top 50% */
+
+  transform: translateY(-50%);
+}
+
+.bg-effect {
+  background-image: url("./assets/image/bg-pattern-light.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  height: 30px;
+}
+
+.section-title-border {
+  width: 50px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #4341cc;
+}
+
+
+.list-service .card .card-title {
+  font-size: 18px;
+}
+
+.list-service .card .card-text {
+  font-size: 14px;
+}
+
+.list-service .card i:hover{
+  transition: all 0.3s ease-in-out;
+  background-color: #0d6efd;
+  color: #ffffff!important;
+}
+
+.list-service i {
+  font-size: 32px;
+  height: 68px;
+  width: 68px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%) !important;
+  line-height: 68px;
+  margin: 0 auto;
+}
+
+.list-unstyle {
+  padding-left: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 14.4px;
+}
+
+.feature ul li {
+  font-size: 14.4px;
+  position: relative;
+  padding: 7px 0 7px 20px;
+}
+
+.feature  ul li::before {
+  content: "";
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  background-color: #0d6efd;
+
+}
+
+.text-muted {
+  color: #95a0ab;
+  line-height: 1.7;
+}
+
+.btn{
+  font-size: 14px!important;
+  letter-spacing: 0.5px;
+}
+
+
+
+.btn:hover, .card:hover, .hover-effect:hover{
+  transition: all 0.3s ease-in-out !important;
+  transform: translateY(-6%);
+}
+
+
+.review .card{
+  z-index: -1;
+}
+.review img{
+  display: block;
+  width: 75px;
+  margin: -40px auto;
+  z-index: 1;
+}
+
+.read-more{
+  color: #0d6efd!important;
+  transition: all 0.2s;
+}
+
+.read-more:hover{
+  color: black;
+}
+
+::placeholder{
+  font-size: 13px;
+}
+
+.icon-social{
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.icon-social i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #cccccc;
+}
+
